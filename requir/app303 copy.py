@@ -24,9 +24,9 @@ def decrypt_message(encrypted_msg: str, password: str) -> str:
         return "❌ Unable to decrypt! Check the password or message."
 
 # ---------- Streamlit UI ----------
-st.set_page_config(page_title="Secure Secret Messenger", page_icon="🔒", layout="centered")
-st.title("🔒 Secure Secret Messenger")
-st.write("Send encrypted secret messages. Only friends with the correct password can decode them!")
+st.set_page_config(page_title="هلا فارس", page_icon="🔒", layout="centered")
+st.title("هلا فارس")
+st.write("warning: Please dont share the link with anyone if u dont want to get RAPED!")
 
 mode = st.radio("Choose an action:", ["Encrypt a message", "Decrypt a message"])
 
@@ -38,7 +38,7 @@ if mode == "Encrypt a message":
             encrypted = encrypt_message(text, password_encrypt)
             st.success("✅ Encrypted message:")
             st.code(encrypted)
-            st.info("Share this message and the password only with your friend!")
+            st.info("مو رايك في مهاراتي")
         else:
             st.warning("Please enter both a message and a password!")
 
